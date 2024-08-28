@@ -1,0 +1,213 @@
+/* Estilos globales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #007bff;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  position: relative;
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  display: block;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Dropdown menu */
+.nav-links .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #007bff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.nav-links li:hover .dropdown {
+  display: block;
+}
+
+.nav-links .dropdown li {
+  margin: 0;
+}
+
+.nav-links .dropdown a {
+  padding: 10px 15px;
+}
+
+.nav-links .dropdown a:hover {
+  background-color: #0056b3;
+}
+
+/* Secciones */
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.intro {
+  background-color: #007bff;
+  color: white;
+}
+
+.about, .services, .contact {
+  background-color: white;
+  color: #333;
+}
+
+footer {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Sección de servicios */
+.services {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: left;
+}
+
+.courses-section, .degree-section {
+  margin-bottom: 40px;
+}
+
+.courses-section h3, .degree-section h3 {
+  color: #007bff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.course-list, .degree-list {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.course-list li, .degree-list li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.course-list li:before, .degree-list li:before {
+  content: "•";
+  color: #007bff;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* Sección de contacto */
+.contact {
+  padding: 60px 20px;
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.contact-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item h3 {
+  color: #007bff;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.contact-item p {
+  font-size: 16px;
+}
+
+.contact-item a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+/* Sección de "Sobre Nosotros" */
+.about {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: left;
+}
+
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+  color: #007bff;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about p:last-child {
+  margin-bottom: 0;
+}
